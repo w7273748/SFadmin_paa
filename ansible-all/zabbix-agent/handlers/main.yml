@@ -1,8 +1,0 @@
----
-
-- name: restart zabbix-agent
-  become: true
-  systemd:
-    daemon_reload: true
-    name: zabbix-agent.service
-    state: restarted
